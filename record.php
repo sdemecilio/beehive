@@ -69,19 +69,27 @@
                 if($isValid)
                 {
                     // read from database
-                require'../../../honeyDB.php';
+                    require'../../../honeyDB.php';
                 
                     // escape the data (rejects sql injection)
                     $hiveName = mysqli_real_escape_string($cnxn, $hiveName);
                     
                     $sql = "INSERT INTO bee_observations VALUES(NULL, '$hiveName', '$collectionDate', '$observationPeriod', '$miteCount', NOW());";
-                    echo $sql; // <--- shows what the sql statemet is 
+                    echo $sql; // <--- shows what the sql statemet is
+                    $result = @mysqli_query($cnxn, $sql);
                     
-                    print "<p></p>";
-                    print "Hive Name: " . $hiveName . "<br>";
-                    print "Collection date: " . $collectionDate . "<br>";
-                    print "Observation Period: " . $observationPeriod . "<br>";
-                    print "Mite count: " . $miteCount . "<br>";
+                    if($result)
+                    {
+                        print "<p></p>";
+                        print "Hive Name: " . $hiveName . "<br>";
+                        print "Collection date: " . $collectionDate . "<br>";
+                        print "Observation Period: " . $observationPeriod . "<br>";
+                        print "Mite count: " . $miteCount . "<br>";
+                    }
+                    else
+                    {
+                        echo "<p>Error: " . mysqli_error($cnxn) . "</p>";
+                    }
                 }
             ?>
         
