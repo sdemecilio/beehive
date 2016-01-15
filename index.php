@@ -12,8 +12,16 @@
     </head>
     
     <body>
-        <h1>Honey Bee Data Collection Form</h1>        
-        <form id = "dataCollection" action = "record.php" method = "POST">
+        <h1>Honey Bee Data Collection Form</h1>
+        <!--
+            Need:
+                - Hive name
+                - Observation date
+                - observation duration
+                - mite count
+            -->
+        
+        <form id = "dataCollection" action = "recordPDO.php" method = "POST">
             <p>
                 Hive Name:
                     <input type = "text" id = "hiveName" name = "hiveName">
