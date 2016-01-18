@@ -1,0 +1,29 @@
+// SQL to create database in PHPADMIN
+CREATE TABLE `stacey_bee_database`.`bee_observations` (`sample_id` INT NOT NULL AUTO_INCREMENT , `hive_id`VARCHAR(30) NOT NULL , `collection_date` DATE NOT NULL ,`sample_period` INT NOT NULL , `num_mites` INT NOT NULL ,`submit_time` TIMESTAMP NOT NULL , PRIMARY KEY(`sample_id`) ) ENGINE = MyISAM;
+
+// INSERT statements for sample data
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Irene', '2016-01-01', 46, 47, '2015-01-30 07:25:37');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Carlos', '2015-05-20', 17, 30, '2015-08-29 04:31:07');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Christopher', '2015-01-13', 13, 39, '2015-06-18 08:42:03');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Carol', '2015-08-31', 7, 59, '2015-08-24 09:24:59');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Charles', '2015-08-09', 68, 63, '2015-03-01 15:35:35');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Larry', '2015-01-17', 99, 25, '2015-02-11 16:30:52');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Douglas', '2015-09-08', 84, 67, '2015-04-19 14:03:16');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Jonathan', '2015-03-19', 33, 68, '2015-04-13 08:36:28');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Dennis', '2015-03-17', 88, 26, '2015-11-23 17:00:44');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('James', '2015-09-17', 6, 77, '2015-05-04 20:25:43');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Martin', '2015-03-23', 87, 95, '2015-08-24 19:46:37');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Kathleen', '2015-02-28', 51, 90, '2015-09-10 08:59:46');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Thomas', '2015-09-27', 68, 3, '2015-08-24 18:15:22');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Janet', '2015-11-13', 89, 7, '2015-12-31 05:33:50');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Nancy', '2015-08-12', 87, 30, '2015-05-24 10:21:12');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Steven', '2015-12-31', 56, 46, '2015-09-03 22:56:39');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Phyllis', '2015-06-24', 86, 11, '2015-06-08 20:34:43');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Rachel', '2015-03-05', 41, 40, '2015-08-14 05:33:39');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Wanda', '2015-02-10', 53, 40, '2015-08-08 02:45:22');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Paul', '2015-04-10', 17, 27, '2015-07-18 20:38:30');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Timothy', '2016-01-04', 15, 37, '2015-10-23 17:59:54');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Wanda', '2015-07-04', 88, 32, '2015-11-15 05:33:45');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Jerry', '2015-12-10', 96, 85, '2015-04-23 11:49:43');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Betty', '2015-12-23', 50, 11, '2015-02-27 14:34:45');
+insert into bee_observations (hive_id, collection_date, sample_period, num_mites, submit_time) values ('Debra', '2015-01-18', 42, 95, '2016-01-02 19:17:10');
