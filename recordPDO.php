@@ -19,15 +19,15 @@
         <body>
             
             <?php
-            $username = "tempBeeAdmin";
-            $password = "tempPass000";
+            $username = "stacey_beeAdmin";
+            $password = "bee123";
             $hostname = "localhost";
             
             try
             {
                 // instatiate a database object
-                $database = new PDO("mysql:host=$hostname; dbname=TempBeeDatabase", $username, $password);
-                echo 'Connected to database';
+                $database = new PDO("mysql:host=$hostname; dbname=stacey_bee_database", $username, $password);
+                //echo 'Connected to database';
             }
             catch(PDOException $e)
             {
@@ -86,14 +86,17 @@
                     
                     // execute statement
                    $statement->execute();
-                    
+    
                     if ($statement)
                     {
+                        print "<p>Data Recently Inputted:</p>";
                         print "<p></p>";
                         print "Hive Name: " . $hiveName . "<br>";
                         print "Collection date: " . $collectionDate . "<br>";
                         print "Observation Period: " . $observationPeriod . "<br>";
                         print "Mite count: " . $miteCount . "<br>";
+                        
+                        
                     }
 
                 }
